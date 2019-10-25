@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projetile Motion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-title">
+                    <span id="heading">Projectile Motion Calculator</span>
+                </div>
+                <div class="card-body">
+                    <form action="#" id="pro-form">
+                        <div class="input-field">
+                            <label for="velo" class="form-control">velocity(u):</label>
+                            <input type="number" name="velo" id="velocity" placeholder="enter the initial velocity" class="form-control">
+                        </div>
+                        <div class="input-field">
+                            <label for="angle" class="form-control">angle</label>
+                            <input type="number" name="angle" id="angle" placeholder="inclined angle to horizontal" class="form-control">
+                        </div>
+                        <div class="input-field">
+                            <label for="gravity" class="form-control">accelation-gravity:</label>
+                            <input type="number" name="gravity" id="gravity"  placeholder="enter 'g'"  class="form-control">
+                        </div>
+
+                        <div class="input-field">
+                            <input type="submit" value="calculate" class="btn">
+                           </div>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <div id="loader">
+                        <img src="./img/loading.gif"  alt="loader" class="loader">
+                    </div>
+                    <div id="results">
+                        <h2 class="result">Result</h2>
+                    <div class="input-field">
+                        <label for="time" class="form-control">totalTime(sec):</label> 
+                       <input type="number" name="time" id="time" disabled class="form-control">
+                    </div>
+                    <div class="input-field">
+                        <label for="high" class="form-control">Height(m):</label> 
+                       <input type="number" name="high" id="height" disabled class="form-control">
+                    </div>
+                    <div class="input-field">
+                        <label for="range" class="form-control">Range(m):</label> 
+                       <input type="number" name="range" id="range" disabled class="form-control">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
